@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			My Cool Calculator
+		</title>
+		<script src="model.js"></script> 
+		<script src="view.js"></script> 
+		<script src="controller.js"></script> 
+		<link rel="stylesheet" href="calc.css">
+	</head>
+
+	<body>
+		<h1> .:: My Cool Calculator ::.  </h1>
+ 		<div class="calcframe">
+			<form name="form1">
+				<input class= "calcview" name = "textview">
+			</form>
+			<table class="center">
+				<tr> 
+					<td> <input class = "calcbtn" type = "button" value = "C" onclick = "notifyClearRequested()" > </td>
+					<td> <input  class = "calcbtn" type = "button" value = "B" onclick = "notifyLastDigitRemoveRequested()" > </td>
+					<td> <input  class = "calcbtn" type = "button" value = "/" onclick = "notifyOperatorSelected('/')" > </td>
+					<td> <input class = "calcbtn" type = "button" value = "x" onclick = "notifyOperatorSelected('*')" > </td>
+				</tr>
+				<tr> 
+					<td> <input class = "calcbtn" type = "button" value = "7" onclick = "notifyNewDigitInserted(7)" > </td>
+					<td> <input class = "calcbtn" type = "button" value = "8" onclick = "notifyNewDigitInserted(8)" > </td>
+					<td> <input class = "calcbtn" type = "button" value = "9" onclick = "notifyNewDigitInserted(9)" > </td>
+					<td> <input class = "calcbtn" type = "button" value = "-" onclick = "notifyOperatorSelected('-')" > </td>
+				</tr>	
+				<tr> 
+					<td> <input class = "calcbtn" type = "button" value = "4" onclick = "notifyNewDigitInserted(4)" > </td>
+					<td> <input class = "calcbtn" type = "button" value = "5" onclick = "notifyNewDigitInserted(5)" > </td>
+					<td> <input class = "calcbtn" type = "button" value = "6" onclick = "notifyNewDigitInserted(6)" > </td>
+					<td> <input class = "calcbtn" type = "button" value = "+" onclick = "notifyOperatorSelected('+')" > </td>
+				</tr>
+				<tr> 
+					<td> <input class = "calcbtn" type = "button" value = "1" onclick = "notifyNewDigitInserted(1)" > </td>
+					<td> <input class = "calcbtn" type = "button" value = "2" onclick = "notifyNewDigitInserted(2)" > </td>
+					<td> <input class = "calcbtn" type = "button" value = "3" onclick = "notifyNewDigitInserted(3)" > </td>
+					<td rowspan = 5> <input class = "calcbtn" style = "height: 110px" type = "button" value = "=" onclick = "notifyComputeResultRequested()"> </td>
+				</tr>
+				<tr>
+					<td colspan = 2> <input class = "calcbtn" style = "width: 106px" type = "button" value = "0" onclick = "notifyNewDigitInserted(0)" > </td>
+					<td><input class = "calcbtn" type = "button" value = "." onclick = "notifyDecimalPointInserted()"> </td>
+				</tr>
+			</table>
+		 </div>
+ 	</body>
+ </html>
+
+ 

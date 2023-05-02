@@ -1,0 +1,15 @@
+{
+  "name": "calc-session-service",
+  "version": "1.0.0",
+  "description": "Calculator service",
+  "main": "calc-session-service.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "aricci",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.3.6",
+    "express": "^4.18.2"
+  }
+}

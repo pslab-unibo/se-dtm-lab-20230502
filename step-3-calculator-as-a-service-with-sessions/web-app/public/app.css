@@ -1,0 +1,68 @@
+
+div.hidden { display: none; }
+
+div.registration {
+	padding: 25px;
+}
+
+div.userIdDiv {
+	display: none;
+	background-color: rgb(245, 252, 111);
+}
+
+div.login {
+	padding: 25px;
+}
+
+.calcstyle {
+	width: 300px;
+	height: 330px;
+	margin: 20px auto;
+	border: 3px solid rgb(40, 160, 208);
+	border-radius: 5px;
+	padding: 20px;
+	text-align: center;
+	background-color: white;
+	display: none;
+}
+
+h1 {
+	text-align: center;
+	padding: 23px;
+	background-color: rgb(29, 178, 237);
+	color: black;
+}
+
+input:hover {
+	background-color: green;
+}
+	
+*{
+margin: 0;
+padding: 0;
+}
+
+/* It is used to create the layout for calculator button. */
+.calcbtn{
+	width: 50px;
+	height: 50px;
+	font-size: 25px;
+	margin: 2px;
+	cursor: pointer;
+	background-color: lightgray;
+	color: black;
+}
+
+.calcview{
+	width: 223px;
+	margin: 5px;
+	font-size: 25px;
+	padding: 5px;
+	text-align: right;
+	background-color: lightgreen;
+}	
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+}

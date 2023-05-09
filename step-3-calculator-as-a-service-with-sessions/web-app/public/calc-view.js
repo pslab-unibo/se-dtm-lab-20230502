@@ -22,8 +22,9 @@ class View {
         document.getElementById('loginDiv').style.display = "none"
     }
 
-    showCalculator(){
+    showCalculator(userId){
         document.getElementById('calcDiv').style.display = "block"
+        document.getElementById('banner').innerHTML = '.:: Calculator Service | User: ' + userId + ' ::.' 
     }
 
 }

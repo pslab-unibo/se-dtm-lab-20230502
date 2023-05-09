@@ -33,7 +33,7 @@ async function notifySubmitLogin(userId) {
     calc.setSessionId(result.sessionId)
     view.hideLogin()
     view.hideRegistration()
-    view.showCalculator()
+    view.showCalculator(userId)
 }
 
 async function notifyClearRequested(){
